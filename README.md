@@ -11,6 +11,7 @@ In a famous scientific problem, researchers are interested in the following ques
 When n is sufficiently large, there is a threshold value p\* such that when p \< p\* a random n-by-n grid almost never percolates, and when p \> p\*, a random n-by-n grid almost always percolates. No mathematical solution for determining the percolation threshold p\* has yet been derived. Your task is to write a computer program to estimate p\*.
 ### Percolation data type
 To model a percolation system, create a data type Percolation with the following API:
+
 	public class Percolation {
 	   public Percolation(int n)                // create n-by-n grid, with all sites blocked
 	   public    void open(int row, int col)    // open site (row, col) if it is not open already
@@ -20,6 +21,7 @@ To model a percolation system, create a data type Percolation with the following
 	   public boolean percolates()              // does the system percolate?
 	   public static void main(String[] args)   // test client (optional)
 	}
+	
 ### Monte Carlo simulation
 To estimate the percolation threshold, consider the following computational experiment:
 * Initialize all sites to be blocked.
