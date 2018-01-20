@@ -18,10 +18,8 @@ To model a percolation system, create a data type Percolation with the following
 	   public boolean isFull(int row, int col)  // is site (row, col) full?
 	   public     int numberOfOpenSites()       // number of open sites
 	   public boolean percolates()              // does the system percolate?
-	
 	   public static void main(String[] args)   // test client (optional)
 	}
-	
 ### Monte Carlo simulation
 To estimate the percolation threshold, consider the following computational experiment:
 * Initialize all sites to be blocked.
